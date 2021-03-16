@@ -91,11 +91,13 @@
          */
   
         const addToTheSecond = function () {
-          let newOnTheList= document.createElement("n1")
-          newOnTheList.innerText= "New on the list"
-          document.getElementById("secondList").appendChild(newOnTheList)
-        
-        };
+        let ulTag = document.getElementById("secondList"); //ul
+        let newElement = document.createElement("newElement"); //li
+        newElement.appendChild(document.createTextNode("New Element"));
+           ulTag.appendChild(newElement);
+}
+        addToTheSecond ()
+       
   
         /* EXERCISE 6
         Write a function for adding a second paragraph to the div.
@@ -123,15 +125,19 @@
         */
   
         const paintItGreen = function () {
-          document.querySelectorAll("ul")[0].style.backgroundColor= "green"
-          document.querySelectorAll("ul")[1].style.backgroundColor= "green"
+          for (i=0; i<document.querySelectorAll("ul").length; i++) {
+          document.querySelectorAll("ul")[i].style.backgroundColor= "green"
+          }
         };
   
         /* EXERCISE 9
         Make the heading of the page change color every time the user clicks on it.
         */
-  
+        document.
         const makeItClickable = function () {
+          document.querySelector("h2").setAttribute.onclick
+          // document.querySelector("h2").style.backgroundColor= "blue"
+
           //
         };
   
