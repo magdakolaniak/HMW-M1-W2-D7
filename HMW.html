@@ -62,7 +62,7 @@
         */
   
         const addClassToTitle = function () {
-          document.querySelector("style").classList.add("newClass") }
+          document.getElementsByClassName("myHeading").classList.add("newClass") }
           
        
   
@@ -79,16 +79,21 @@
         Write a function for changing the destination of every link to https://www.google.com
         */
   
-        const changeUrls = function () {
-          //
-        };
+        // const changeUrls = function () {
+        //   let newContent= " <a href:"https://google.com" />"
+        //   document.querySelectorAll("a")[0]= newcontent
+        //   //
+        // };
   
         /* EXERCISE 5
          Write a function for adding a new item in the second list.
          */
   
-        const addToTheSecond = function (content) {
-          //
+        const addToTheSecond = function () {
+          let newOnTheList= document.createElement("n1")
+          newOnTheList.innerText= "New on the list"
+          document.getElementById("secondList").appendChild(newOnTheList)
+        
         };
   
         /* EXERCISE 6
@@ -96,7 +101,11 @@
         */
   
         const addParagraph = function (content) {
-          //
+
+          let newParagraph= document.createElement("nP1")
+          newParagraph.innerText= content
+          document.querySelector("div").appendChild(newParagraph)
+        
         };
   
         /* EXERCISE 7
@@ -104,7 +113,8 @@
         */
   
         const firstUlDisappear = function () {
-          //
+          document.getElementById("firstList").style.display("none")
+          
         };
   
         /* EXERCISE 8
@@ -112,7 +122,8 @@
         */
   
         const paintItGreen = function () {
-          //
+          document.querySelectorAll("ul")[0].style.backgroundColor= "green"
+          document.querySelectorAll("ul")[1].style.backgroundColor= "green"
         };
   
         /* EXERCISE 9
