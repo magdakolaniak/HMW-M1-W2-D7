@@ -62,7 +62,8 @@
         */
   
         const addClassToTitle = function () {
-          document.getElementsByClassName("style")[0].classList.add("newClass") }
+          document.querySelector("header h1").innerHTML
+ }
           
        
   
@@ -80,9 +81,10 @@
         */
   
         const changeUrls = function () {
-          document.querySelectorAll("a")[0].setAttribute()
+          document.querySelectorAll("a")[0].setAttribute("href", "http://google.com" )
         
         };
+        changeUrls()
   
         /* EXERCISE 5
          Write a function for adding a new item in the second list.
